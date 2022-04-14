@@ -15,7 +15,8 @@ def input_category():
         try:
             x = int(input())
 
-            if x in range(1, 5): return x
+            if x in range(1, 5):
+                return x
             print("Введите одно целое число от 1 до 4")
 
         except ValueError:
@@ -60,6 +61,8 @@ def move_figure(figure: GeometryFigure) -> GeometryFigure:
     point = input_point()
     figure.move(point["x"], point['y'])
     return figure
+
+
 def main():
     triangle = create_figure(3, "Треугольник")
     tetragon = create_figure(4, "Четырёхугольник")
@@ -77,6 +80,7 @@ def main():
             tetragon = move_figure(tetragon)
         elif category == 4:
             triangle.compare(tetragon)
+
 
 if __name__ == "__main__":
     main()

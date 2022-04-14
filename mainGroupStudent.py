@@ -76,7 +76,7 @@ def inputCategoryAttribute(inputPhone: bool):
 
 def inputAttributStudent():
     print("Введите через пробел ФАМИЛИЮ ИМЯ ОТЧЕСТВО НОМЕР")
-    print("Номер телефона введите по шаблону X-XXX-XXX-XX-XX. Например 8-123-456-78-90")
+    print("Введите номер телефона по шаблону X(XXX)XXX-XX-XX. Например 8(123)456-78-90")
     while True:
         attributs = input().split()
         if not checkAttribut(attributs[0]):
