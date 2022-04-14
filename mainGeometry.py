@@ -8,6 +8,7 @@ def print_menu():
     print("4 - Сравнить площади фигур")
 
 
+
 def input_category():
     print("Выберите категорию")
 
