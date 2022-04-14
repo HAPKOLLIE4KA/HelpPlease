@@ -133,11 +133,13 @@ def switchCategoryStartMenu(category, studentGroup: StudentGroup):
         attributs = inputAttributStudent()
         studentGroup.getListStudentObject.addStudent(Student(*attributs))
         studentGroup.updateCountStudent()
+        print("Студент успешно добавлен")
 
     elif category == 5:
         phone = inputPhone()
         studentGroup.getListStudentObject.deleteStudent(phone)
         studentGroup.updateCountStudent()
+        print("Студент успешно удалён")
 
     elif category == 6:
         print("По какой категории искать студентов?")
