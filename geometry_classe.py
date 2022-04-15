@@ -3,10 +3,10 @@
 
 class GeometryFigure():
 
-    def __init__(self, _points, name):
+    def __init__(self, points, name):
         self._name_figure = name
-        self._points = _points
-        self._count_punkt = len(_points)
+        self._points = points
+        self._count_punkt = len(points)
         self._square = self._calculation_square()
 
     @property
