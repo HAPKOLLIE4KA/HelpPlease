@@ -40,4 +40,6 @@ class ArrayZnak:
             if object.get_surname == surname:
                 list_object += [object]
 
-        return ArrayZnak(list_object)
+        return list_object
+
+

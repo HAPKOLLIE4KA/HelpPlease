@@ -123,8 +123,13 @@ def main():
 
         if category == 2:
             surname = input_surname()
-            array_znak.search_znak(surname).print_all_znak()
+            array_result = array_znak.search_znak(surname)
+
+            if len(array_result) == 0:
+                print("\nТакого человека в списке нет\n")
+            for znak in array_result: print(f"\n{znak}\n")
 
 
 if __name__ == "__main__":
     main()
+
